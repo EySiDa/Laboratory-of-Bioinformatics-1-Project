@@ -1,0 +1,1 @@
+awk '/^>/ {if (seq && length(seq) >= 20 && length(seq) <= 100) {print head; print seq} head=$0; seq=""} /^[^>]/ {seq = seq $0} END {if (length(seq) >= 20 && length(seq) <= 100) {print head; print seq}}' cdhit-all-chains.fasta >all-chain-filtered.fasta
