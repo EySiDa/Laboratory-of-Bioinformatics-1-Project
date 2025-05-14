@@ -5,7 +5,7 @@ def make_fasta(file):
     with open(file, "r") as x:
         data = json.load(x)
 
-    with open("test003.fasta", "w") as output:
+    with open("OUTPUT_FASTA_NAME", "w") as output:
         for item in data:
             d = item.get("data", {})
             ids = d.get("rcsb_entry_container_identifiers", {})
