@@ -1,0 +1,1 @@
+cd-hit -i kunitz.fasta -o kunitz_cdhit.fasta -c 0.95 -aL 0.9
