@@ -1,0 +1,1 @@
+clustalo -i cdhit-all-chains-lenght.fasta -o final-allignment.fasta --outfmt=fasta
